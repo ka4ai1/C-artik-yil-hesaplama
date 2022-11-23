@@ -11,6 +11,8 @@ printf("Ayi girin >");
 scanf("%d",&ay);
 if(ay==2 && yil%400==0 || yil!=100 && yil%4==0){
 switch(ay){
+    case 2: printf("%d yilinin subat ayi 29 gundur",yil);
+    break;
     case 4: printf("%d yilinin nisan ayi 29 gundur",yil);
     break;
     case 6: printf("%d yilinin haziran ayi 29 gundur",yil);
