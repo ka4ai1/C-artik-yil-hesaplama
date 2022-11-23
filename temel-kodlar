@@ -1,0 +1,25 @@
+/*
+     coded by kaswai
+*/
+#include<stdio.h>
+int main()
+{
+int ay,yil;
+printf("ARTIK YIL HESAPLAMA PROGRAMI\nYili girin >");
+scanf("%d",&yil);
+printf("Ayi girin >");
+scanf("%d",&ay);
+if(ay==2 && yil%400==0 || yil!=100 && yil%4==0){
+    printf("%d yilinin %d. ayi 29 gundur",yil,ay);
+}
+else if(ay==2){
+    printf("%d yilinin %d. ayi 28 gundur",yil,ay);
+}
+else if(ay==1 || ay==3 || ay==5 || ay==7 || ay==8 || ay==10 || ay==12){
+    printf("%d yilinin %d. ayi 31 gundur",yil,ay);
+}
+else{
+        printf("%d yilinin %d. ayi 30 gundur",yil,ay);
+}
+
+}
