@@ -1,0 +1,74 @@
+/*
+    coded by kaswa
+*/
+#include<stdio.h>
+int main()
+{
+int ay,yil;
+printf("ARTIK YIL HESAPLAMA PROGRAMI\nYili girin >");
+scanf("%d",&yil);
+printf("Ayi girin >");
+scanf("%d",&ay);
+if(ay==2 && yil%400==0 || yil!=100 && yil%4==0){
+switch(ay){
+    case 4: printf("%d yilinin nisan ayi 29 gundur",yil);
+    break;
+    case 6: printf("%d yilinin haziran ayi 29 gundur",yil);
+    break;
+    case 9: printf("%d yilinin eylul ayi 29 gundur",yil);
+    break;
+    case 11: printf("%d yilinin kasim ayi 29 gundur",yil);
+    break;
+}
+}
+else if(ay==2){
+    printf("%d yilinin subat ayi 28 gundur",yil,ay);
+}
+else if(ay==1 || ay==3 || ay==5 || ay==7 || ay==8 || ay==10 || ay==12){
+    
+switch(ay){
+    case 1: printf("%d yilinin ocak ayi 31 gundur",yil);
+    break;
+    case 3: printf("%d yilinin mart ayi 31 gundur",yil);
+    break;
+    case 5: printf("%d yilinin mayis ayi 31 gundur",yil);
+    break;
+    case 7: printf("%d yilinin temmuz ayi 31 gundur",yil);
+    break;
+    case 8: printf("%d yilinin agustos ayi 31 gundur",yil);
+    break;
+    case 10: printf("%d yilinin ekim ayi 31 gundur",yil);
+    break;
+    case 12: printf("%d yilinin aralik ayi 31 gundur",yil);
+    break;
+}
+}
+else{
+    
+switch(ay){
+    case 1: printf("%d yilinin ocak ayi 30 gundur",yil);
+    break;
+    case 3: printf("%d yilinin mart ayi 30 gundur",yil);
+    break;
+    case 4: printf("%d yilinin nisan ayi 30 gundur",yil);
+    break;
+    case 5: printf("%d yilinin mayis ayi 30 gundur",yil);
+    break;
+    case 6: printf("%d yilinin haziran ayi 30 gundur",yil);
+    break;
+    case 7: printf("%d yilinin temmuz ayi 30 gundur",yil);
+    break;
+    case 8: printf("%d yilinin agustos ayi 30 gundur",yil);
+    break;
+    case 9: printf("%d yilinin eylul ayi 30 gundur",yil);
+    break;
+    case 10: printf("%d yilinin ekim ayi 30 gundur",yil);
+    break;
+    case 11: printf("%d yilinin kasim ayi 30 gundur",yil);
+    break;
+    case 12: printf("%d yilinin aralik ayi 30 gundur",yil);
+    break;
+}
+}
+
+}
